@@ -42,6 +42,10 @@ const I = {
   globe: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>,
   send: <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>,
   check: <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>,
+  bot: <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="3"/><circle cx="9" cy="16" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="16" r="1.5" fill="currentColor" stroke="none"/><path d="M8.5 11V7.5a3.5 3.5 0 017 0V11"/><line x1="12" y1="4" x2="12" y2="2"/><circle cx="12" cy="1.5" r="1" fill="currentColor" stroke="none"/></svg>,
+  close: <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>,
+  whatsapp: <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>,
+  expand: <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>,
 };
 
 /* ═══ DATA ═══ */
@@ -60,14 +64,14 @@ const PROJECTS = [
   { id: 3, title: "React Native - Kolo Tiers & Badges - Jour 28", type: "UI", tag: "Example" },
   { id: 4, title: "React Native - Marketplace Interface Vendeur - Jour 27", type: "UI", tag: "Design" },
   { id: 5, title: "Node.js - API Mobile Money Airtel/MTN - Jour 26", type: "API", tag: "Example" },
-  { id: 6, title: "Php - Bonresto Réservation - Jour 25", type: "UI", tag: "Example" },
+  { id: 6, title: "React Native - Bonresto Réservation - Jour 25", type: "UI", tag: "Example" },
   { id: 7, title: "React Native - Kolo Corporate PDF/Excel - Jour 24", type: "Feature", tag: "Example" },
   { id: 8, title: "React - Lamuka Tech Landing - Jour 23", type: "Web", tag: "Design" },
   { id: 9, title: "Python - Lamu AI Chatbot - Jour 22", type: "AI", tag: "Example" },
   { id: 10, title: "React Native - Kolo Messagerie - Jour 21", type: "UI", tag: "Example" },
 ];
-const EXP = [{ company: "Lamuka Tech", period: "2023 - Présent", role: "Fondateur & Lead Developer", bullets: ["Conception et développement de Bonresto, Kolo et Marketplace avec React Native et Node.js.", "Architecture backend avec PostgreSQL, Prisma ORM,  Python, Js, Php, Java, Express.js, JWT et audit logging.", "Intégration Mobile Money (Airtel, MTN, Orange), auth biométrique, multilingue."] }];
-const SKL = [{ t: "Développement Mobile", d: "Expert React Native, cross-platform iOS/Android. APIs REST, auth biométrique." }, { t: "Développement Web & Backend", d: "Node.js, Express.js, React, Python, Js, Php, Java, Next.js. PostgreSQL, Prisma ORM, JWT, microservices." }, { t: "DevOps & Infrastructure", d: "CI/CD, Docker, cloud. Déploiement automatisé, monitoring." }];
+const EXP = [{ company: "Lamuka Tech", period: "2023 - Présent", role: "Fondateur & Lead Developer", bullets: ["Conception et développement de Bonresto, Kolo et Marketplace avec React Native et Node.js.", "Architecture backend avec PostgreSQL, Prisma ORM, Express.js, JWT et audit logging.", "Intégration Mobile Money (Airtel, MTN, Orange), auth biométrique, multilingue."] }];
+const SKL = [{ t: "Développement Mobile", d: "Expert React Native, cross-platform iOS/Android. APIs REST, auth biométrique." }, { t: "Développement Web & Backend", d: "Node.js, Express.js, React, Next.js. PostgreSQL, Prisma ORM, JWT, microservices." }, { t: "DevOps & Infrastructure", d: "CI/CD, Docker, cloud. Déploiement automatisé, monitoring." }];
 
 /* Tech Stack */
 const STACK = [
@@ -95,6 +99,57 @@ const TIMELINE = [
   { year: "2025", q: "Q3", title: "Lamu AI — Chatbot Multilingue", desc: "Assistant IA pour support client en Français, English, Lingala et Kikongo.", icon: "🤖" },
   { year: "2026", q: "Q1", title: "Expansion Internationale", desc: "Ouverture vers l'Afrique de l'Ouest. Nouveaux partenariats et scaling de l'infrastructure.", icon: "🌍" },
 ];
+
+/* ═══ LAMU AI CHATBOT DATA ═══ */
+type Lang = "fr" | "en" | "ln";
+const LANG_LABELS: Record<Lang, string> = { fr: "Français", en: "English", ln: "Lingala" };
+
+const FAQ: Record<Lang, Array<{ q: string; a: string; keys: string[] }>> = {
+  fr: [
+    { q: "Qu'est-ce que Bonresto ?", a: "Bonresto est notre plateforme tout-en-un de gestion de restaurants : commandes, menus digitaux, réservations, analytics et gestion du personnel. Conçue pour l'Afrique francophone avec des prix en FCFA.", keys: ["bonresto", "restaurant", "menu", "commande", "réservation"] },
+    { q: "Comment fonctionne Kolo ?", a: "Kolo est une application de tontine digitale. Vous créez ou rejoignez des cercles d'épargne, avec intégration Mobile Money (Airtel, MTN, Orange). Disponible en mode personnel et corporate avec badges, tiers et reporting.", keys: ["kolo", "tontine", "épargne", "cercle", "savings"] },
+    { q: "C'est quoi le Marketplace ?", a: "Notre Marketplace est une plateforme e-commerce multi-vendeurs pensée pour l'Afrique. Les vendeurs gèrent leurs boutiques, les acheteurs paient via Mobile Money, et le suivi de livraison est intégré.", keys: ["marketplace", "e-commerce", "vendeur", "boutique", "acheter"] },
+    { q: "Qu'est-ce que Lamu AI ?", a: "Lamu AI est notre assistant intelligent multilingue (Français, English, Lingala, Kikongo). Il gère le support client automatisé, s'intègre sur le web et fournit des analytics conversationnels.", keys: ["lamu", "chatbot", "ia", "ai", "assistant", "intelligence"] },
+    { q: "Quels moyens de paiement acceptez-vous ?", a: "Nous intégrons Mobile Money via Kolo Pay : Airtel Money, MTN Mobile Money et Orange Money. Le SDK est simple à intégrer et le dashboard offre un suivi en temps réel.", keys: ["paiement", "payment", "mobile money", "airtel", "mtn", "orange", "argent", "prix"] },
+    { q: "Comment vous contacter ?", a: "Vous pouvez nous écrire à joeldy@lamukatech.com, nous contacter via WhatsApp, ou remplir le formulaire sur la page Contact. Nous répondons sous 24h !", keys: ["contact", "email", "joindre", "écrire", "téléphone"] },
+    { q: "Où êtes-vous basés ?", a: "Lamuka Tech est basée à Brazzaville, au Congo 🇨🇬. Nous servons l'Afrique francophone et nous nous étendons vers l'Afrique de l'Ouest.", keys: ["où", "basé", "localisation", "brazzaville", "congo", "adresse"] },
+    { q: "Je veux un devis", a: "Super ! Pour un devis personnalisé, envoyez-nous un message avec votre besoin via le formulaire Contact ou par email à joeldy@lamukatech.com. Nous vous répondrons avec une proposition détaillée.", keys: ["devis", "prix", "tarif", "coût", "combien", "gratuit"] },
+  ],
+  en: [
+    { q: "What is Bonresto?", a: "Bonresto is our all-in-one restaurant management platform: orders, digital menus, reservations, analytics and staff management. Built for Francophone Africa with FCFA pricing.", keys: ["bonresto", "restaurant", "menu", "order"] },
+    { q: "How does Kolo work?", a: "Kolo is a digital tontine/savings circle app. Create or join savings circles with Mobile Money integration (Airtel, MTN, Orange). Available in personal and corporate modes.", keys: ["kolo", "tontine", "savings", "circle"] },
+    { q: "What is the Marketplace?", a: "Our Marketplace is a multi-vendor e-commerce platform built for Africa. Vendors manage shops, buyers pay via Mobile Money, with integrated delivery tracking.", keys: ["marketplace", "e-commerce", "vendor", "shop", "buy"] },
+    { q: "What is Lamu AI?", a: "Lamu AI is our multilingual intelligent assistant (French, English, Lingala, Kikongo). It handles automated customer support, web integration and conversational analytics.", keys: ["lamu", "chatbot", "ai", "assistant"] },
+    { q: "How to contact you?", a: "Email us at joeldy@lamukatech.com, reach out via WhatsApp, or fill the Contact form. We respond within 24h!", keys: ["contact", "email", "reach", "phone"] },
+    { q: "I want a quote", a: "Great! For a custom quote, send us a message via the Contact form or email joeldy@lamukatech.com. We'll reply with a detailed proposal.", keys: ["quote", "price", "cost", "how much", "free"] },
+  ],
+  ln: [
+    { q: "Bonresto ezali nini?", a: "Bonresto ezali plateforme ya gestion ya ba restaurants : ba commandes, ba menus digitaux, ba réservations, analytics pe gestion ya ba employés. Esalamá pona Afrique francophone.", keys: ["bonresto", "restaurant", "mesa"] },
+    { q: "Kolo esalaka ndenge nini?", a: "Kolo ezali application ya tontine digitale. Okoki kosala to kokota na cercle ya épargne na Mobile Money (Airtel, MTN, Orange). Ezali pona bato pe ba entreprises.", keys: ["kolo", "tontine", "mbongo", "épargne"] },
+    { q: "Marketplace ezali nini?", a: "Marketplace na biso ezali plateforme ya e-commerce pona ba vendeurs mingi na Afrique. Ba vendeurs bakoki kotia biloko, ba acheteurs bafutaka na Mobile Money.", keys: ["marketplace", "vendeur", "acheter", "biloko"] },
+    { q: "Ndenge nini nakoki kokutana na bino?", a: "Okoki kotinda email na joeldy@lamukatech.com, kokutana na biso na WhatsApp, to kotondisa formulaire na page Contact. Toyanolaka na 24h!", keys: ["contact", "kokutana", "email", "téléphone"] },
+  ],
+};
+
+const LAMU_SYSTEM = `Tu es Lamu, l'assistant IA de Lamuka Tech, une entreprise technologique basée à Brazzaville, Congo. 
+
+PRODUITS:
+- Bonresto: plateforme gestion restaurants (commandes, menus digitaux, réservations, analytics, personnel). Prix en FCFA.
+- Kolo: tontine digitale avec Mobile Money (Airtel, MTN, Orange). Mode personnel et corporate. Badges, tiers, reporting.
+- Marketplace: e-commerce multi-vendeurs pour l'Afrique. Paiement Mobile Money, suivi livraison.
+- Lamu AI: chatbot multilingue (FR, EN, Lingala, Kikongo) pour support client.
+- Kolo Pay: passerelle paiement Mobile Money. SDK simple, dashboard temps réel.
+- Bonresto POS: caisse enregistreuse digitale pour restaurants.
+
+FONDATEUR: Joeldy, développeur Full-Stack (React Native, Node.js, PostgreSQL).
+CONTACT: joeldy@lamukatech.com | WhatsApp disponible | Brazzaville, Congo 🇨🇬
+
+RÈGLES:
+- Réponds dans la langue du message (français, english, ou lingala).
+- Sois concis, professionnel et chaleureux.
+- Si on demande un devis/prix, propose de contacter par email ou WhatsApp.
+- Si la question dépasse ton domaine, redirige poliment vers le contact.
+- Maximum 3-4 phrases par réponse.`;
 
 /* ═══ CSS ═══ */
 const CSS = `
@@ -294,7 +349,72 @@ body,html{background:var(--bg);color:var(--text);font-family:'Inter',-apple-syst
 .footer a{color:var(--t2);text-decoration:underline;text-underline-offset:3px}
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
 
+/* ═══ LAMU CHATBOT ═══ */
+.lamu-float{position:fixed;bottom:28px;right:28px;z-index:150}
+.lamu-fab{width:58px;height:58px;border-radius:50%;border:none;background:linear-gradient(135deg,#EC4899,#F43F5E);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(244,63,94,0.4);transition:all .25s}
+.lamu-fab:hover{transform:scale(1.08);box-shadow:0 8px 32px rgba(244,63,94,0.5)}
+.lamu-fab .pulse{position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(244,63,94,0.4);animation:lamu-pulse 2s infinite}
+@keyframes lamu-pulse{0%{transform:scale(1);opacity:1}100%{transform:scale(1.4);opacity:0}}
+
+.lamu-win{
+  position:fixed;bottom:100px;right:28px;z-index:151;
+  width:400px;max-height:560px;
+  background:var(--surface);border:1px solid var(--border);border-radius:24px;
+  display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:0 24px 80px rgba(0,0,0,.35);
+  animation:lamu-in .3s cubic-bezier(.16,1,.3,1);
+}
+.lamu-full{
+  width:100%;max-width:700px;max-height:none;
+  position:relative;bottom:auto;right:auto;
+  margin:0 auto;min-height:500px;
+  box-shadow:var(--shadow);animation:none;
+}
+@keyframes lamu-in{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+.lamu-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border);flex-shrink:0}
+.lamu-head-l{display:flex;align-items:center;gap:12px}
+.lamu-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#EC4899,#F43F5E);display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0}
+.lamu-head-l h3{font-size:15px;font-weight:600;line-height:1.2}
+.lamu-head-l small{font-size:12px;color:var(--t3)}
+.lamu-head-r{display:flex;gap:6px}
+.lamu-head-r button{width:32px;height:32px;border-radius:8px;border:none;background:transparent;color:var(--t2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.lamu-head-r button:hover{background:var(--sh)}
+.lamu-lang{padding:4px 10px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--t2);font-size:11px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s}
+.lamu-lang.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+
+.lamu-body{flex:1;overflow-y:auto;padding:16px 20px;display:flex;flex-direction:column;gap:12px;min-height:280px}
+.lamu-body::-webkit-scrollbar{width:4px}.lamu-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+
+.lm{max-width:85%;padding:12px 16px;border-radius:18px;font-size:14px;line-height:1.55;animation:lm-in .25s ease}
+@keyframes lm-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.lm.bot{align-self:flex-start;background:var(--sh);border:1px solid var(--border);color:var(--text);border-bottom-left-radius:6px}
+.lm.user{align-self:flex-end;background:linear-gradient(135deg,#EC4899,#F43F5E);color:#fff;border-bottom-right-radius:6px}
+.lm.typing{color:var(--t3);font-style:italic;border:1px dashed var(--border)}
+
+.lamu-faq{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.lamu-faq button{padding:8px 14px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--t2);font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;transition:all .15s;text-align:left}
+.lamu-faq button:hover{border-color:var(--bh);color:var(--text);background:var(--sh)}
+
+.lamu-actions{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.lamu-act{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--t2);font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;transition:all .15s;text-decoration:none}
+.lamu-act:hover{border-color:var(--bh);color:var(--text)}
+.lamu-act.wa{border-color:rgba(37,211,102,0.3);color:#25D366}.lamu-act.wa:hover{background:rgba(37,211,102,0.08)}
+
+.lamu-input{display:flex;align-items:center;gap:10px;padding:12px 16px;border-top:1px solid var(--border);flex-shrink:0}
+.lamu-input input{flex:1;padding:10px 14px;border-radius:12px;border:1px solid var(--input-border);background:var(--input-bg);color:var(--text);font-size:14px;font-family:inherit;outline:none;transition:border-color .2s}
+.lamu-input input:focus{border-color:var(--accent)}
+.lamu-input button{width:40px;height:40px;border-radius:12px;border:none;background:linear-gradient(135deg,#EC4899,#F43F5E);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:opacity .15s;flex-shrink:0}
+.lamu-input button:hover{opacity:.85}
+
+.lamu-page-h{text-align:center;padding:64px 0 32px;max-width:620px;margin:0 auto}
+.lamu-page-h h1{font-size:40px;font-weight:600;letter-spacing:-.04em;margin-bottom:12px}
+.lamu-page-h p{font-size:16px;color:var(--t2)}
+
 @media(max-width:900px){
+  .lamu-float{bottom:90px;right:16px}
+  .lamu-win{right:16px;left:16px;width:auto;bottom:160px;max-height:420px}
+  .lamu-fab{width:52px;height:52px}
   .topbar{display:none!important}.bb{display:block!important}
   .wrap{padding:0 20px;padding-bottom:100px}
   .pgrid{grid-template-columns:1fr}.hstats{gap:10px}.hst{padding:12px 20px}.hst .n{font-size:16px}.hst .l{font-size:12px}
@@ -519,10 +639,181 @@ function Contact() {
 
       <Reveal delay={200}>
         <div className="ct-info">
-          <div className="ct-info-item">{I.mail} joeldytsina94@gmail.com</div>
+          <div className="ct-info-item">{I.mail} joeldy@lamukatech.com</div>
           <div className="ct-info-item">{I.globe} Brazzaville, Congo 🇨🇬</div>
-          <div className="ct-info-item">{I.gh} github.com/J0312Y</div>
+          <div className="ct-info-item">{I.gh} github.com/joeldy</div>
         </div>
+      </Reveal>
+    </div>
+  );
+}
+
+/* ═══ LAMU AI CHATBOT COMPONENT ═══ */
+interface Msg { role: "bot" | "user"; text: string; faq?: boolean; actions?: boolean }
+
+function LamuChat({ embedded = false, onExpand }: { embedded?: boolean; onExpand?: () => void }) {
+  const [msgs, setMsgs] = useState<Msg[]>([]);
+  const [input, setInput] = useState("");
+  const [lang, setLang] = useState<Lang>("fr");
+  const [loading, setLoading] = useState(false);
+  const bodyRef = useRef<HTMLDivElement>(null);
+
+  const greetings: Record<Lang, string> = {
+    fr: "Bonjour ! 👋 Je suis Lamu, l'assistant IA de Lamuka Tech. Comment puis-je vous aider ?",
+    en: "Hello! 👋 I'm Lamu, the AI assistant of Lamuka Tech. How can I help you?",
+    ln: "Mbote! 👋 Ngai Lamu, assistant IA ya Lamuka Tech. Ndenge nini nakoki kosalisa yo?",
+  };
+
+  useEffect(() => {
+    setMsgs([{ role: "bot", text: greetings[lang], faq: true }]);
+  }, [lang]);
+
+  useEffect(() => {
+    if (bodyRef.current) bodyRef.current.scrollTop = bodyRef.current.scrollHeight;
+  }, [msgs]);
+
+  const findFAQ = (text: string): string | null => {
+    const lower = text.toLowerCase();
+    const faqs = FAQ[lang] || FAQ.fr;
+    for (const f of faqs) {
+      if (f.keys.some(k => lower.includes(k))) return f.a;
+    }
+    return null;
+  };
+
+  const callAI = async (userMsg: string): Promise<string> => {
+    try {
+      const res = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          system: LAMU_SYSTEM,
+          messages: [
+            ...msgs.filter(m => !m.faq).slice(-6).map(m => ({
+              role: m.role === "bot" ? "assistant" as const : "user" as const,
+              content: m.text
+            })),
+            { role: "user" as const, content: userMsg }
+          ],
+        }),
+      });
+      const data = await res.json();
+      const text = data.content?.map((c: any) => c.type === "text" ? c.text : "").filter(Boolean).join("\n");
+      return text || fallback(lang);
+    } catch {
+      return fallback(lang);
+    }
+  };
+
+  const fallback = (l: Lang) => ({
+    fr: "Je suis désolé, je ne peux pas répondre pour le moment. Contactez-nous à joeldy@lamukatech.com ou via WhatsApp !",
+    en: "Sorry, I can't respond right now. Please contact us at joeldy@lamukatech.com or via WhatsApp!",
+    ln: "Bolimbisi, nakoki te koyanola sikoyo. Kotinda email na joeldy@lamukatech.com to na WhatsApp!",
+  }[l]);
+
+  const send = async (text?: string) => {
+    const msg = text || input.trim();
+    if (!msg) return;
+    setInput("");
+
+    setMsgs(prev => [...prev, { role: "user", text: msg }]);
+
+    const faqAnswer = findFAQ(msg);
+    if (faqAnswer) {
+      setTimeout(() => {
+        setMsgs(prev => [...prev, { role: "bot", text: faqAnswer, actions: true }]);
+      }, 400);
+      return;
+    }
+
+    setLoading(true);
+    setMsgs(prev => [...prev, { role: "bot", text: "...", faq: false }]);
+
+    const answer = await callAI(msg);
+    setMsgs(prev => {
+      const updated = [...prev];
+      updated[updated.length - 1] = { role: "bot", text: answer, actions: true };
+      return updated;
+    });
+    setLoading(false);
+  };
+
+  const faqButtons = (FAQ[lang] || FAQ.fr).slice(0, 4);
+
+  return (
+    <div className={`lamu-win ${embedded ? "lamu-full" : ""}`}>
+      <div className="lamu-head">
+        <div className="lamu-head-l">
+          <div className="lamu-avatar">{I.bot}</div>
+          <div><h3>Lamu AI</h3><small>Lamuka Tech Assistant</small></div>
+        </div>
+        <div className="lamu-head-r">
+          {(["fr", "en", "ln"] as Lang[]).map(l => (
+            <button key={l} className={`lamu-lang ${lang === l ? "on" : ""}`} onClick={() => setLang(l)}>{l.toUpperCase()}</button>
+          ))}
+          {!embedded && onExpand && <button onClick={onExpand} title="Page dédiée">{I.expand}</button>}
+          {!embedded && <button onClick={() => {
+            const ev = new CustomEvent("lamu-close");
+            window.dispatchEvent(ev);
+          }}>{I.close}</button>}
+        </div>
+      </div>
+
+      <div className="lamu-body" ref={bodyRef}>
+        {msgs.map((m, i) => (
+          <div key={i}>
+            <div className={`lm ${m.role} ${m.text === "..." ? "typing" : ""}`}>
+              {m.text === "..." ? (lang === "ln" ? "Nazali kokanisa..." : lang === "en" ? "Thinking..." : "Réflexion...") : m.text}
+            </div>
+            {m.faq && m.role === "bot" && i === 0 && (
+              <div className="lamu-faq">
+                {faqButtons.map((f, j) => (
+                  <button key={j} onClick={() => send(f.q)}>{f.q}</button>
+                ))}
+              </div>
+            )}
+            {m.actions && m.role === "bot" && i === msgs.length - 1 && (
+              <div className="lamu-actions">
+                <a className="lamu-act wa" href="https://wa.me/242060000000" target="_blank" rel="noreferrer">
+                  {I.whatsapp} WhatsApp
+                </a>
+                <a className="lamu-act" href="mailto:joeldy@lamukatech.com">
+                  {I.mail} Email
+                </a>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <div className="lamu-input">
+        <input
+          placeholder={lang === "ln" ? "Komá motuna na yo..." : lang === "en" ? "Type your message..." : "Écrivez votre message..."}
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={e => e.key === "Enter" && send()}
+          disabled={loading}
+        />
+        <button onClick={() => send()} disabled={loading}>{I.send}</button>
+      </div>
+    </div>
+  );
+}
+
+/* ═══ LAMU PAGE (dedicated) ═══ */
+function LamuPage() {
+  return (
+    <div className="cc">
+      <Reveal>
+        <div className="lamu-page-h">
+          <h1>🤖 Lamu AI</h1>
+          <p>Posez vos questions sur nos produits, demandez un devis ou discutez en Français, English ou Lingala.</p>
+        </div>
+      </Reveal>
+      <Reveal delay={100}>
+        <LamuChat embedded={true} />
       </Reveal>
     </div>
   );
@@ -540,7 +831,7 @@ function Abt() {
         <div className="lps"><span className="lpi">Français</span><span className="lpi">English</span><span className="lpi">Lingala</span></div>
       </aside>
       <main>
-        <Reveal><h1 className="aname">Joeldy TSINA</h1></Reveal>
+        <Reveal><h1 className="aname">Joeldy</h1></Reveal>
         <Reveal delay={50}><p className="arole">Full-Stack Developer</p></Reveal>
         <Reveal delay={100}><div className="srow"><a href="#" className="spil">{I.gh} GitHub</a><a href="#" className="spil">{I.ig} Instagram</a><a href="#" className="spil">{I.li} LinkedIn</a><a href="#" className="spil">{I.mail} Email</a></div></Reveal>
         {tab === "intro" && (<><Reveal delay={150}><p className="abio">Je suis Joeldy, développeur Full-Stack et fondateur de Lamuka Tech, une entreprise technologique au Congo qui développe des solutions innovantes pour les marchés africains.</p></Reveal><Reveal delay={200}><p className="abio">Passionné par les produits qui répondent aux besoins réels — Bonresto pour la restauration, Kolo pour la tontine digitale, et une plateforme marketplace.</p></Reveal><Reveal delay={250}><p className="abio">Avec un engagement pour l'excellence, je transforme les idées en réalité à travers le code.</p></Reveal></>)}
@@ -556,8 +847,16 @@ export default function App() {
   const [page, setPage] = useState("home");
   const [theme, setTheme] = useState("dark");
   const [initCat, setIC] = useState<string | null>(null);
+  const [chatOpen, setChatOpen] = useState(false);
 
   useEffect(() => { document.documentElement.setAttribute("data-theme", theme); }, [theme]);
+
+  // Listen for close event from chat widget
+  useEffect(() => {
+    const handler = () => setChatOpen(false);
+    window.addEventListener("lamu-close", handler);
+    return () => window.removeEventListener("lamu-close", handler);
+  }, []);
 
   const go = (p: string, cat?: string) => { if (cat) setIC(cat); else setIC(null); setPage(p); window.scrollTo(0, 0); };
   const toggle = () => setTheme((t: string) => t === "dark" ? "light" : "dark");
@@ -569,6 +868,7 @@ export default function App() {
     { k: "blog", icon: I.blog, lbl: "Blog" },
     { k: "about", icon: I.about, lbl: "À propos" },
     { k: "contact", icon: I.contact, lbl: "Contact" },
+    { k: "lamu", icon: I.bot, lbl: "Lamu AI" },
   ];
 
   return (
@@ -597,8 +897,24 @@ export default function App() {
           {page === "blog" && <Blg />}
           {page === "about" && <Abt />}
           {page === "contact" && <Contact />}
+          {page === "lamu" && <LamuPage />}
         </div>
         <footer className="footer">© 2026 /Joeldy/ Built with ❤️ <a href="#">React</a> & <a href="#">Node.js</a></footer>
+
+        {/* Floating chat bubble — hidden when on Lamu page */}
+        {page !== "lamu" && (
+          <div className="lamu-float">
+            {chatOpen && (
+              <LamuChat
+                onExpand={() => { setChatOpen(false); go("lamu"); }}
+              />
+            )}
+            <button className="lamu-fab" onClick={() => setChatOpen(!chatOpen)} title="Chat avec Lamu AI">
+              {chatOpen ? I.close : I.bot}
+              {!chatOpen && <span className="pulse" />}
+            </button>
+          </div>
+        )}
       </div>
     </>
   );

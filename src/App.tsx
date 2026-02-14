@@ -102,7 +102,7 @@ const TIMELINE = [
 
 /* ═══ LAMU AI CHATBOT DATA ═══ */
 type Lang = "fr" | "en" | "ln";
-const LANG_LABELS: Record<Lang, string> = { fr: "Français", en: "English", ln: "Lingala" };
+//const LANG_LABELS: Record<Lang, string> = { fr: "Français", en: "English", ln: "Lingala" };
 
 const FAQ: Record<Lang, Array<{ q: string; a: string; keys: string[] }>> = {
   fr: [

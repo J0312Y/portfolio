@@ -102,7 +102,6 @@ const TIMELINE = [
 
 /* ═══ LAMU AI CHATBOT DATA ═══ */
 type Lang = "fr" | "en" | "ln";
-//const LANG_LABELS: Record<Lang, string> = { fr: "Français", en: "English", ln: "Lingala" };
 
 const FAQ: Record<Lang, Array<{ q: string; a: string; keys: string[] }>> = {
   fr: [
@@ -141,8 +140,9 @@ PRODUITS:
 - Kolo Pay: passerelle paiement Mobile Money. SDK simple, dashboard temps réel.
 - Bonresto POS: caisse enregistreuse digitale pour restaurants.
 
-FONDATEUR: Joeldy, développeur Full-Stack (Php, Java, React Native, Node.js, PostgreSQL).
-CONTACT: joeldytsina94@gmail.com | WhatsApp disponible | Brazzaville, Congo 🇨🇬
+FONDATEUR: Joeldy, développeur Full-Stack (React Native, Node.js, PostgreSQL).
+CONTACT: joeldytsina94@gmail.com | WhatsApp: +242 064 663 469 | Brazzaville, Congo 🇨🇬
+GitHub: github.com/J0312Y | LinkedIn: linkedin.com/in/joeldy-tsina-84a1b9227 | Instagram: @joeldyofficiel
 
 RÈGLES:
 - Réponds dans la langue du message (français, english, ou lingala).
@@ -444,8 +444,8 @@ function Home({ go }: { go: (p: string, cat?: string) => void }) {
       </Reveal>
       <Reveal delay={200}>
         <div className="hsoc">
-          <a className="hsoc-i" href="#">{I.gh}</a><a className="hsoc-i" href="#">{I.ig}</a>
-          <a className="hsoc-i" href="#">{I.li}</a><a className="hsoc-i" href="#">{I.mail}</a>
+          <a className="hsoc-i" href="https://github.com/J0312Y" target="_blank" rel="noreferrer">{I.gh}</a><a className="hsoc-i" href="https://www.instagram.com/joeldyofficiel" target="_blank" rel="noreferrer">{I.ig}</a>
+          <a className="hsoc-i" href="https://www.linkedin.com/in/joeldy-tsina-84a1b9227" target="_blank" rel="noreferrer">{I.li}</a><a className="hsoc-i" href="mailto:joeldytsina94@gmail.com">{I.mail}</a>
         </div>
       </Reveal>
       <Reveal delay={250}>
@@ -831,9 +831,9 @@ function Abt() {
         <div className="lps"><span className="lpi">Français</span><span className="lpi">English</span><span className="lpi">Lingala</span></div>
       </aside>
       <main>
-        <Reveal><h1 className="aname">Joeldy TSINA</h1></Reveal>
+        <Reveal><h1 className="aname">Joeldy</h1></Reveal>
         <Reveal delay={50}><p className="arole">Full-Stack Developer</p></Reveal>
-        <Reveal delay={100}><div className="srow"><a href="#" className="spil">{I.gh} GitHub</a><a href="#" className="spil">{I.ig} Instagram</a><a href="#" className="spil">{I.li} LinkedIn</a><a href="#" className="spil">{I.mail} Email</a></div></Reveal>
+        <Reveal delay={100}><div className="srow"><a href="https://github.com/J0312Y" target="_blank" rel="noreferrer" className="spil">{I.gh} GitHub</a><a href="https://www.instagram.com/joeldyofficiel" target="_blank" rel="noreferrer" className="spil">{I.ig} Instagram</a><a href="https://www.linkedin.com/in/joeldy-tsina-84a1b9227" target="_blank" rel="noreferrer" className="spil">{I.li} LinkedIn</a><a href="mailto:joeldytsina94@gmail.com" className="spil">{I.mail} Email</a></div></Reveal>
         {tab === "intro" && (<><Reveal delay={150}><p className="abio">Je suis Joeldy, développeur Full-Stack et fondateur de Lamuka Tech, une entreprise technologique au Congo qui développe des solutions innovantes pour les marchés africains.</p></Reveal><Reveal delay={200}><p className="abio">Passionné par les produits qui répondent aux besoins réels — Bonresto pour la restauration, Kolo pour la tontine digitale, et une plateforme marketplace.</p></Reveal><Reveal delay={250}><p className="abio">Avec un engagement pour l'excellence, je transforme les idées en réalité à travers le code.</p></Reveal></>)}
         {tab === "work" && (<><h2 className="ash" style={{ marginTop: 0, paddingTop: 0, borderTop: "none" }}>Work Experience</h2>{EXP.map(e => (<Reveal key={e.company}><div className="exc"><div className="ext"><span className="exco">{e.company}</span><span className="expe">{e.period}</span></div><p className="exrt">{e.role}</p><ul className="exu">{e.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul></div></Reveal>))}</>)}
         {tab === "skills" && (<><h2 className="ash" style={{ marginTop: 0, paddingTop: 0, borderTop: "none" }}>Technical Skills</h2>{SKL.map((s, i) => (<Reveal key={s.t} delay={i * 80}><div className="skc"><h3>{s.t}</h3><p>{s.d}</p></div></Reveal>))}</>)}

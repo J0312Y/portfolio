@@ -366,10 +366,10 @@ function Abt(){
         <div className="lps"><span className="lpi">Français</span><span className="lpi">English</span><span className="lpi">Lingala</span></div>
       </aside>
       <main>
-        <h1 className="aname">Joeldy</h1>
+        <h1 className="aname">Joeldy TSINA</h1>
         <p className="arole">Full-Stack Developer</p>
         <div className="srow"><a href="#" className="spil">{I.gh} GitHub</a><a href="#" className="spil">{I.ig} Instagram</a><a href="#" className="spil">{I.li} LinkedIn</a><a href="#" className="spil">{I.mail} Email</a></div>
-        {tab==="intro"&&(<><p className="abio">Je suis Joeldy, développeur Full-Stack et fondateur de Lamuka Tech, une entreprise technologique au Congo qui développe des solutions innovantes pour les marchés africains.</p><p className="abio">Passionné par les produits qui répondent aux besoins réels — Bonresto pour la restauration, Kolo pour la tontine digitale, et une plateforme marketplace.</p><p className="abio">Avec un engagement pour l'excellence, je transforme les idées en réalité à travers le code.</p></>)}
+        {tab==="intro"&&(<><p className="abio">Je suis Joeldy TSINA, développeur Full-Stack et fondateur de Lamuka Tech, une entreprise technologique au Congo qui développe des solutions innovantes pour les marchés africains.</p><p className="abio">Passionné par les produits qui répondent aux besoins réels — Bonresto pour la restauration, Kolo pour la tontine digitale, et une plateforme marketplace.</p><p className="abio">Avec un engagement pour l'excellence, je transforme les idées en réalité à travers le code.</p></>)}
         {tab==="work"&&(<><h2 className="ash" style={{marginTop:0,paddingTop:0,borderTop:"none"}}>Work Experience</h2>{EXP.map(e=>(<div key={e.company} className="exc"><div className="ext"><span className="exco">{e.company}</span><span className="expe">{e.period}</span></div><p className="exrt">{e.role}</p><ul className="exu">{e.bullets.map((b,i)=><li key={i}>{b}</li>)}</ul></div>))}</>)}
         {tab==="skills"&&(<><h2 className="ash" style={{marginTop:0,paddingTop:0,borderTop:"none"}}>Technical Skills</h2>{SKL.map(s=>(<div key={s.t} className="skc"><h3>{s.t}</h3><p>{s.d}</p></div>))}</>)}
       </main>

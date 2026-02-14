@@ -111,23 +111,23 @@ const FAQ: Record<Lang, Array<{ q: string; a: string; keys: string[] }>> = {
     { q: "C'est quoi le Marketplace ?", a: "Notre Marketplace est une plateforme e-commerce multi-vendeurs pensée pour l'Afrique. Les vendeurs gèrent leurs boutiques, les acheteurs paient via Mobile Money, et le suivi de livraison est intégré.", keys: ["marketplace", "e-commerce", "vendeur", "boutique", "acheter"] },
     { q: "Qu'est-ce que Lamu AI ?", a: "Lamu AI est notre assistant intelligent multilingue (Français, English, Lingala, Kikongo). Il gère le support client automatisé, s'intègre sur le web et fournit des analytics conversationnels.", keys: ["lamu", "chatbot", "ia", "ai", "assistant", "intelligence"] },
     { q: "Quels moyens de paiement acceptez-vous ?", a: "Nous intégrons Mobile Money via Kolo Pay : Airtel Money, MTN Mobile Money et Orange Money. Le SDK est simple à intégrer et le dashboard offre un suivi en temps réel.", keys: ["paiement", "payment", "mobile money", "airtel", "mtn", "orange", "argent", "prix"] },
-    { q: "Comment vous contacter ?", a: "Vous pouvez nous écrire à joeldy@lamukatech.com, nous contacter via WhatsApp, ou remplir le formulaire sur la page Contact. Nous répondons sous 24h !", keys: ["contact", "email", "joindre", "écrire", "téléphone"] },
+    { q: "Comment vous contacter ?", a: "Vous pouvez nous écrire à joeldytsina94@gmail.com, nous contacter via WhatsApp, ou remplir le formulaire sur la page Contact. Nous répondons sous 24h !", keys: ["contact", "email", "joindre", "écrire", "téléphone"] },
     { q: "Où êtes-vous basés ?", a: "Lamuka Tech est basée à Brazzaville, au Congo 🇨🇬. Nous servons l'Afrique francophone et nous nous étendons vers l'Afrique de l'Ouest.", keys: ["où", "basé", "localisation", "brazzaville", "congo", "adresse"] },
-    { q: "Je veux un devis", a: "Super ! Pour un devis personnalisé, envoyez-nous un message avec votre besoin via le formulaire Contact ou par email à joeldy@lamukatech.com. Nous vous répondrons avec une proposition détaillée.", keys: ["devis", "prix", "tarif", "coût", "combien", "gratuit"] },
+    { q: "Je veux un devis", a: "Super ! Pour un devis personnalisé, envoyez-nous un message avec votre besoin via le formulaire Contact ou par email à joeldytsina94@gmail.com. Nous vous répondrons avec une proposition détaillée.", keys: ["devis", "prix", "tarif", "coût", "combien", "gratuit"] },
   ],
   en: [
     { q: "What is Bonresto?", a: "Bonresto is our all-in-one restaurant management platform: orders, digital menus, reservations, analytics and staff management. Built for Francophone Africa with FCFA pricing.", keys: ["bonresto", "restaurant", "menu", "order"] },
     { q: "How does Kolo work?", a: "Kolo is a digital tontine/savings circle app. Create or join savings circles with Mobile Money integration (Airtel, MTN, Orange). Available in personal and corporate modes.", keys: ["kolo", "tontine", "savings", "circle"] },
     { q: "What is the Marketplace?", a: "Our Marketplace is a multi-vendor e-commerce platform built for Africa. Vendors manage shops, buyers pay via Mobile Money, with integrated delivery tracking.", keys: ["marketplace", "e-commerce", "vendor", "shop", "buy"] },
     { q: "What is Lamu AI?", a: "Lamu AI is our multilingual intelligent assistant (French, English, Lingala, Kikongo). It handles automated customer support, web integration and conversational analytics.", keys: ["lamu", "chatbot", "ai", "assistant"] },
-    { q: "How to contact you?", a: "Email us at joeldy@lamukatech.com, reach out via WhatsApp, or fill the Contact form. We respond within 24h!", keys: ["contact", "email", "reach", "phone"] },
-    { q: "I want a quote", a: "Great! For a custom quote, send us a message via the Contact form or email joeldy@lamukatech.com. We'll reply with a detailed proposal.", keys: ["quote", "price", "cost", "how much", "free"] },
+    { q: "How to contact you?", a: "Email us at joeldytsina94@gmail.com, reach out via WhatsApp, or fill the Contact form. We respond within 24h!", keys: ["contact", "email", "reach", "phone"] },
+    { q: "I want a quote", a: "Great! For a custom quote, send us a message via the Contact form or email joeldytsina94@gmail.com. We'll reply with a detailed proposal.", keys: ["quote", "price", "cost", "how much", "free"] },
   ],
   ln: [
     { q: "Bonresto ezali nini?", a: "Bonresto ezali plateforme ya gestion ya ba restaurants : ba commandes, ba menus digitaux, ba réservations, analytics pe gestion ya ba employés. Esalamá pona Afrique francophone.", keys: ["bonresto", "restaurant", "mesa"] },
     { q: "Kolo esalaka ndenge nini?", a: "Kolo ezali application ya tontine digitale. Okoki kosala to kokota na cercle ya épargne na Mobile Money (Airtel, MTN, Orange). Ezali pona bato pe ba entreprises.", keys: ["kolo", "tontine", "mbongo", "épargne"] },
     { q: "Marketplace ezali nini?", a: "Marketplace na biso ezali plateforme ya e-commerce pona ba vendeurs mingi na Afrique. Ba vendeurs bakoki kotia biloko, ba acheteurs bafutaka na Mobile Money.", keys: ["marketplace", "vendeur", "acheter", "biloko"] },
-    { q: "Ndenge nini nakoki kokutana na bino?", a: "Okoki kotinda email na joeldy@lamukatech.com, kokutana na biso na WhatsApp, to kotondisa formulaire na page Contact. Toyanolaka na 24h!", keys: ["contact", "kokutana", "email", "téléphone"] },
+    { q: "Ndenge nini nakoki kokutana na bino?", a: "Okoki kotinda email na joeldytsina94@gmail.com, kokutana na biso na WhatsApp, to kotondisa formulaire na page Contact. Toyanolaka na 24h!", keys: ["contact", "kokutana", "email", "téléphone"] },
   ],
 };
 
@@ -141,8 +141,8 @@ PRODUITS:
 - Kolo Pay: passerelle paiement Mobile Money. SDK simple, dashboard temps réel.
 - Bonresto POS: caisse enregistreuse digitale pour restaurants.
 
-FONDATEUR: Joeldy, développeur Full-Stack (React Native, Node.js, PostgreSQL).
-CONTACT: joeldy@lamukatech.com | WhatsApp disponible | Brazzaville, Congo 🇨🇬
+FONDATEUR: Joeldy, développeur Full-Stack (Php, Java, React Native, Node.js, PostgreSQL).
+CONTACT: joeldytsina94@gmail.com | WhatsApp disponible | Brazzaville, Congo 🇨🇬
 
 RÈGLES:
 - Réponds dans la langue du message (français, english, ou lingala).
@@ -639,9 +639,9 @@ function Contact() {
 
       <Reveal delay={200}>
         <div className="ct-info">
-          <div className="ct-info-item">{I.mail} joeldy@lamukatech.com</div>
+          <div className="ct-info-item">{I.mail} joeldytsina94@gmail.com</div>
           <div className="ct-info-item">{I.globe} Brazzaville, Congo 🇨🇬</div>
-          <div className="ct-info-item">{I.gh} github.com/joeldy</div>
+          <div className="ct-info-item">{I.gh} github.com/J0312Y</div>
         </div>
       </Reveal>
     </div>
@@ -708,9 +708,9 @@ function LamuChat({ embedded = false, onExpand }: { embedded?: boolean; onExpand
   };
 
   const fallback = (l: Lang) => ({
-    fr: "Je suis désolé, je ne peux pas répondre pour le moment. Contactez-nous à joeldy@lamukatech.com ou via WhatsApp !",
-    en: "Sorry, I can't respond right now. Please contact us at joeldy@lamukatech.com or via WhatsApp!",
-    ln: "Bolimbisi, nakoki te koyanola sikoyo. Kotinda email na joeldy@lamukatech.com to na WhatsApp!",
+    fr: "Je suis désolé, je ne peux pas répondre pour le moment. Contactez-nous à joeldytsina94@gmail.com ou via WhatsApp !",
+    en: "Sorry, I can't respond right now. Please contact us at joeldytsina94@gmail.com or via WhatsApp!",
+    ln: "Bolimbisi, nakoki te koyanola sikoyo. Kotinda email na joeldytsina94@gmail.com to na WhatsApp!",
   }[l]);
 
   const send = async (text?: string) => {
@@ -776,10 +776,10 @@ function LamuChat({ embedded = false, onExpand }: { embedded?: boolean; onExpand
             )}
             {m.actions && m.role === "bot" && i === msgs.length - 1 && (
               <div className="lamu-actions">
-                <a className="lamu-act wa" href="https://wa.me/242060000000" target="_blank" rel="noreferrer">
+                <a className="lamu-act wa" href="https://wa.me/242064663469" target="_blank" rel="noreferrer">
                   {I.whatsapp} WhatsApp
                 </a>
-                <a className="lamu-act" href="mailto:joeldy@lamukatech.com">
+                <a className="lamu-act" href="mailto:joeldytsina94@gmail.com">
                   {I.mail} Email
                 </a>
               </div>
@@ -831,7 +831,7 @@ function Abt() {
         <div className="lps"><span className="lpi">Français</span><span className="lpi">English</span><span className="lpi">Lingala</span></div>
       </aside>
       <main>
-        <Reveal><h1 className="aname">Joeldy</h1></Reveal>
+        <Reveal><h1 className="aname">Joeldy TSINA</h1></Reveal>
         <Reveal delay={50}><p className="arole">Full-Stack Developer</p></Reveal>
         <Reveal delay={100}><div className="srow"><a href="#" className="spil">{I.gh} GitHub</a><a href="#" className="spil">{I.ig} Instagram</a><a href="#" className="spil">{I.li} LinkedIn</a><a href="#" className="spil">{I.mail} Email</a></div></Reveal>
         {tab === "intro" && (<><Reveal delay={150}><p className="abio">Je suis Joeldy, développeur Full-Stack et fondateur de Lamuka Tech, une entreprise technologique au Congo qui développe des solutions innovantes pour les marchés africains.</p></Reveal><Reveal delay={200}><p className="abio">Passionné par les produits qui répondent aux besoins réels — Bonresto pour la restauration, Kolo pour la tontine digitale, et une plateforme marketplace.</p></Reveal><Reveal delay={250}><p className="abio">Avec un engagement pour l'excellence, je transforme les idées en réalité à travers le code.</p></Reveal></>)}
